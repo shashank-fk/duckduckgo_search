@@ -159,6 +159,7 @@ class DDGS:
                             "title": _normalize(row["t"]),
                             "href": _normalize_url(href),
                             "body": body,
+                            "date": row.get("e", None),
                         }
                 else:
                     next_page_url = row.get("n", None)
